@@ -1,0 +1,123 @@
+.otpField  {
+    width: 28px;
+    height: 35px;
+    border-radius: 8px;
+    background-color: #F6F6F6;
+    outline: none;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    text-align: center;
+    margin-bottom: 0;
+
+}
+
+.labelerror {
+    margin-left: 6rem;
+    color: #ff0000;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.modal {
+    width: 60%;
+    height: 2rem;
+    border: 1px solid green;
+    padding: 0.2rem 0rem 0.2rem 2rem;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0vh;
+    left: 1.5rem;
+    transition: all 1.5s;
+    transform: translateX(4rem);
+    display: none;
+}
+
+.modal2 {
+    width: 60%;
+    height: 2rem;
+    border: 1px solid green;
+    padding: 0.2rem 0rem 0.1rem 2rem;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0vh;
+    left: 1.5rem;
+    transition: all 1.5s;
+    transform: translateX(4rem);
+    display: flex;
+    text-align: center;
+}
+
+.modalmini {
+    width: 0.5rem;
+    height: 1.9rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: green;
+    border-radius: 5px;
+}
+
+
+@media (max-width:460px) {
+    .otpFeild {
+        width: 30px;
+        height: 30px;
+    }
+
+    .modal {
+        width: 16rem;
+        left: 0rem;
+    }
+
+    .modal2 {
+        width: 16rem;
+        right: 7rem;
+    }
+}
+
+
+
+@media (max-width:400px) {
+    .modal {
+        width: 15rem;
+        right: 5rem;
+    }
+
+    .modal2 {
+        width: 15rem;
+        right: 5rem;
+    }
+
+    .labelerror {
+        margin-left: 5rem;
+        margin-top: 10px;
+    }
+}
+
+@media (min-width:1100px) {
+    .modal {
+        width: 90%;
+        height: 2rem;
+        padding: 0.2rem 0rem 0.1rem 2rem;
+        position: relative;
+        bottom: -5vh;
+        left: 10vw;
+    }
+
+    .modal2 {
+        width: 90%;
+        height: 2rem;
+        padding: 0.2rem 0rem 0.1rem 2rem;
+        position: relative;
+        bottom: -5vh;
+        left: -40vw;
+    }
+}
+
+.modal {
+    z-index: 9999;
+  }
